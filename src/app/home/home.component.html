@@ -1,0 +1,28 @@
+<p>home works!</p>
+
+<span *ngIf = "name == 'Võ Yên'">Đây là {{age-1}}</span>
+
+<div>
+    Xin chào bạn {{name}}
+    <br/>
+    Tuổi của bạn là {{age}}
+    <br/>
+    <input [(ngModel)]="name" />
+</div>
+
+<div *ngFor="let vn of VN">
+    <li>
+        {{vn}}
+    </li>
+</div>
+
+<input [(ngModel)]="age"/>
+<div >
+    <select>
+        <option *ngFor="let vn of VN">{{vn|uppercase }}</option>
+    </select>
+
+</div>
+<button (mousemove)="TangTuoi()">Click Me!</button>
+<br>
+<br>
